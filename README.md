@@ -11,9 +11,9 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public stream name;  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public readonly int ID；  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public Myclass(int id)  
-&emsp;&emsp;&emsp;&emsp;{  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{  
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;this.ID = id;  
-&emsp;&emsp;&emsp;&emsp;}  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}  
 &emsp;&emsp;&emsp;&emsp;}  
 只读实例字段，一经设定就不能再次修改，在实例构造器中进行初始化；  
 只读实例构造器，在创建对象的时候设置只读字段的值，设置之后则无法再次修改；  
