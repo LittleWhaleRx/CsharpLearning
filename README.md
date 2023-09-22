@@ -19,19 +19,19 @@
 只读实例构造器，在创建对象的时候设置只读字段的值，设置之后则无法再次修改；  
 #### 只读静态字段
 例：  
-  struct Color  
-  {  
-    public int Red；  
-    public int Green；  
-    public int Blue；  
-  }  
-  class Brush  
-  {  
-    public static readonly Color DefaultColor；  
-    staic Brush（）  
-    {  
-      Brush.DefaultColor = new Color(){Red = 0,Green = 0,Blue = 0};  
-    }  
-  }  
+&emsp;&emsp;struct Color  
+&emsp;&emsp;&emsp;&emsp;{  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public int Red；  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public int Green；  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public int Blue；  
+&emsp;&emsp;&emsp;&emsp;}  
+&emsp;&emsp;class Brush  
+&emsp;&emsp;&emsp;&emsp;{  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public static readonly Color DefaultColor；  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;staic Brush（）  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Brush.DefaultColor = new Color(){Red = 0,Green = 0,Blue = 0};  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}  
+&emsp;&emsp;&emsp;&emsp;}  
   只读静态字段，与只读实例字段一样，一经设定就不能修改且在静态构造器中进行初始化；  
   只读静态字段，在创建对象的时候设置只读字段的值，设置之后无法再次修改；  
