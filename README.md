@@ -5,8 +5,8 @@
 功能：为实例或者类型保存一旦初始化后就不希望再次改变的值
 #### 只读实例字段
 例：  
-class Myclass  
-  {   
+&emsp;&emsp;class Myclass  
+  &emsp;&emsp;{   
     public int age;  
     public stream name;  
     public readonly int ID；  
