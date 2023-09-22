@@ -5,16 +5,18 @@
 功能：为实例或者类型保存一旦初始化后就不希望再次改变的值
 #### 只读实例字段
 例：  
-&emsp;&emsp;class Myclass  
-&emsp;&emsp;&emsp;&emsp;{   
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public int age;  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public stream name;  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public readonly int ID；  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;public Myclass(int id)  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;{  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;this.ID = id;  
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}  
-&emsp;&emsp;&emsp;&emsp;}  
+~~~
+class Myclass  
+  {   
+    public int age;  
+    public stream name;  
+    public readonly int ID；  
+    public Myclass(int id)  
+      {  
+        this.ID = id;  
+      }  
+  }
+~~~
 只读实例字段，一经设定就不能再次修改，在实例构造器中进行初始化；  
 只读实例构造器，在创建对象的时候设置只读字段的值，设置之后则无法再次修改；  
 #### 只读静态字段
